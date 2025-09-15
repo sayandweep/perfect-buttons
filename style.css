@@ -1,0 +1,18 @@
+:root {
+  --logo-font: "Bitcount Grid Double"
+}
+
+.logo-container {
+  font-family: var(--logo-font);
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 2rem;
+}
