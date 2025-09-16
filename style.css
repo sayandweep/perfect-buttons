@@ -1,9 +1,13 @@
 :root {
   --logo-font: "Bitcount Grid Double";
   --ham-color: #454545;
-  --hamhov-color: #EF3C00
+  --hamhov-color: #EF3C00;
+  --base-font: "Inter";
 }
-
+body {
+  font-family: var(--base-font);
+  font-style: normal;
+}
 .logo-container {
   font-family: var(--logo-font);
   font-optical-sizing: auto;
@@ -71,13 +75,44 @@
 .dropdown-item a,.dropdown-item a:hover, .dropdown-item a:active {
   text-decoration: none !important;
   color: #454545;
-  background: white !important;
+  background: none !important;
+}
+.dropdown-menu .dropdown-item {
+  padding: 3px 8px;
+  transition: .1s ease-in-out;
 }
 .dropdown-menu .dropdown-item:hover {
-  background: white;
+  background: #E0E0E0;
+  border-radius: 10px;
 }
 .dropdown-menu {
-  border-width: 1.5px !important;
+  padding: 10px !important;
+  border: solid #EAEAEA 1.5px !important;
   transition: .3s ease-in-out;
-  
+  border-radius: 16px !important;
+  background: #F9F9F9 !important;
+  box-shadow: #FFFFFF 0px 2px 1px 0px inset, rgba(0, 0, 0, 0.09) 0px 1px 2px, rgba(0, 0, 0, 0.09) 0px 2px 4px, rgba(0, 0, 0, 0.09) 0px 4px 8px
+}
+.dropdown-item span {
+  background: #FFE5DC;
+  color: #FF4000;
+  border-radius: 3px;
+  padding: 1px 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  margin-left: 5px
+}
+li.dropdown-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.dropdown-item a {
+  display: block;
+  font-weight: 500 !important;
+  letter-spacing: -.5px !important;
+  font-size: 16px;
+  color: #636363;
 }
