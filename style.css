@@ -1,5 +1,7 @@
 :root {
-  --logo-font: "Bitcount Grid Double"
+  --logo-font: "Bitcount Grid Double";
+  --ham-color: #454545;
+  --hamhov-color: #EF3C00
 }
 
 .logo-container {
@@ -12,7 +14,70 @@
   align-items: center;
   height: 100vh;
 }
-
 .logo {
   font-size: 2rem;
+}
+.logo-nav {
+  width: 11%;
+}
+.logo-nav img {
+  border-radius: 13px;
+  box-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.2),
+    5px 5px 5px rgba(0, 0, 0, 0.1),
+    6px 6px 10px rgba(0, 0, 0, 0.05);
+}
+.dropdown-button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.dropdown-button span {
+  display: block;
+  margin: 5px 0;
+  height: 1.9px;
+  border-radius: 100px;
+  transition: .1s;
+}
+.dropdown-button[aria-expanded="true"] span {
+  transition: .3s ease-in-out;
+}
+.dropdown-button span:nth-child(1){
+  width: 30px;
+  background: var(--ham-color);
+}
+.dropdown-button span:nth-child(2) {
+  width: 30px;
+  background: var(--ham-color);
+}
+.dropdown-button span:nth-child(3) {
+  width: 30px;
+  background: var(--ham-color);
+}
+.dropdown-button[aria-expanded="true"] span:nth-child(1){
+  width: 25px;
+  background: var(--hamhov-color);
+  transform: rotate(45deg) translateX(-1px) translateY(5px);
+}
+.dropdown-button[aria-expanded="true"] span:nth-child(2) {
+  background: var(--hamhov-color);
+  display: none;
+}
+.dropdown-button[aria-expanded="true"] span:nth-child(3) {
+  width: 25px;
+  background: var(--hamhov-color);
+  transform: rotate(-45deg) translateX(-1px) translateY(-5px);
+}
+.dropdown-item a,.dropdown-item a:hover, .dropdown-item a:active {
+  text-decoration: none !important;
+  color: #454545;
+  background: white !important;
+}
+.dropdown-menu .dropdown-item:hover {
+  background: white;
+}
+.dropdown-menu {
+  border-width: 1.5px !important;
+  transition: .3s ease-in-out;
+  
 }
