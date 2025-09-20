@@ -1,3 +1,4 @@
+/* button-1 */
 .perfectbutton1 {
   background: #4958FF;
   color: white;
@@ -8,4 +9,16 @@
 }
 .perfectbutton1:hover {
   background: #3B48D1
+}
+/* button-2 */
+.perfectbutton2 {
+  background: white;
+  color: black;
+  border-radius: 100px;
+  padding: 20px;
+  transition: .1s ease-in-out;
+}
+.perfectbutton2:active {
+  border: dashed 1.2px black;
+  transform: scale(.97)
 }
