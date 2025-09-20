@@ -23,6 +23,14 @@
   transform: scale(.97)
 }
 .perfectbutton3 {
-  background: #EE6728;
+  background: #DA5111;
   color: white;
+  border-radius: 15px;
+  padding: 15px 25px;
+  border-bottom: solid #A13B0A 5px;
+  transition: .1s ease-in-out
+}
+.perfectbutton3:active {
+  transform: translateY(1px);
+  border-bottom: solid #A13B0A 1px
 }
