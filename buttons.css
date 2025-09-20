@@ -34,3 +34,23 @@
   transform: translateY(1px);
   border-bottom: solid #A13B0A 1px
 }
+.perfectbutton4 {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  transition: .1s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1)
+}
+.perfectbutton4:active {
+  box-shadow: 0 0 0 white;
+  transform: scale(.97);
+  background: #157320;
+  color: white;
+}
+.perfectbutton4:after{
+  content: 'Perfect Buttons'
+}
+.perfectbutton4:hover:after {
+  content: 'Clicked'
+}
